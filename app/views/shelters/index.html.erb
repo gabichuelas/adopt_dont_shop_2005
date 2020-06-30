@@ -1,5 +1,5 @@
 <h1 class='page-title'>Shelter List</h1>
-<ul id="shelters">
+<ul id="shelters-index">
   <% @shelters.each do |shelter| %>
     <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
   <% end %>
