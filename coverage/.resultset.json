@@ -223,7 +223,7 @@
           null
         ]
       },
-      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/shelters/index_spec.rb": {
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/shelters/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -236,15 +236,15 @@
           null,
           1,
           null,
-          null,
-          null,
+          1,
+          1,
           1,
           1,
           null,
           null
         ]
       },
-      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/shelters/show_spec.rb": {
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/shelters/show_spec.rb": {
         "lines": [
           null,
           null,
@@ -258,22 +258,22 @@
           1,
           1,
           1,
-          1,
           null,
           1,
           1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/shelter.rb": {
         "lines": [
+          1,
           1,
           null
         ]
@@ -291,6 +291,25 @@
           1,
           2,
           null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -302,6 +321,6 @@
         ]
       }
     },
-    "timestamp": 1593548725
+    "timestamp": 1593551636
   }
 }

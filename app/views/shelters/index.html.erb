@@ -1,4 +1,6 @@
 <h1 class='page-title'>Shelter List</h1>
-<% @shelters.each do |shelter| %>
-  <h3><%= link_to shelter.name, 'shelters/:id', class: 'shelter-name' %></h3>
-<% end %>
+<ul id="shelters">
+  <% @shelters.each do |shelter| %>
+    <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
+  <% end %>
+</ul>

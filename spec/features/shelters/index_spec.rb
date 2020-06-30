@@ -7,11 +7,11 @@ RSpec.describe "visit /shelters index", type: :feature do
     shelter1 = Shelter.create(name: "Shelter 1")
     shelter2 = Shelter.create(name: "Shelter 2")
 
-    visit shelters_path
+    visit "/shelters"
 
-    # expect(page).to have_content(shelter1.name)
-    # expect(page).to have_content(shelter2.name)
     page.has_content?(shelter1.name)
     page.has_content?(shelter2.name)
+    page.has_link?(shelter1.name)
+    page.has_link?(shelter2.name)
   end
 end
