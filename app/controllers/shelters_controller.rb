@@ -4,6 +4,7 @@ class SheltersController < ApplicationController
   end
 
   def show
+    @shelter = Shelter.find(params[:id])
   end
 
   def new
@@ -19,5 +20,5 @@ class SheltersController < ApplicationController
   end
 
   def destroy
-  end 
+  end
 end
