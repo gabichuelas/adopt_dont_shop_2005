@@ -223,7 +223,7 @@
           null
         ]
       },
-      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/shelters/see_name_of_each_shelter_spec.rb": {
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/shelters/index_spec.rb": {
         "lines": [
           null,
           null,
@@ -233,16 +233,13 @@
           1,
           1,
           1,
-          1,
           null,
           1,
           null,
           null,
           null,
-          null,
           0,
           0,
-          null,
           null,
           null
         ]
@@ -259,8 +256,24 @@
           1,
           null
         ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1593540802
+    "timestamp": 1593541044
   }
 }
