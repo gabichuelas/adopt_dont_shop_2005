@@ -2,7 +2,7 @@
 # When I visit '/shelters'
 # Then I see the name of each shelter in the system
 
-describe "as a visitor", type: :feature do
+RSpec.describe "as a visitor", type: :feature do
   describe "when I visit /shelters" do
     it "then I see the name of each shelter in the system" do
       shelter1 = Shelter.create(name: "Shelter 1")
