@@ -23,14 +23,13 @@ RSpec.describe "create new shelter", type: :feature do
     click_link "New Shelter"
     expect(current_path).to eq("/shelters/new")
 
-    fill_in('Name', with: 'Shelter 4, new')
-    fill_in('Address', with: '4242 Granada Blvd.')
-    fill_in('City', with: 'Miami')
-    fill_in('Zip', with: 33703)
+    fill_in('name', with: 'Shelter 4, new')
+    fill_in('address', with: '4242 Granada Blvd.')
+    fill_in('city', with: 'Miami')
+    fill_in('zip', with: 33703)
 
-    click_on("Add Shelter")
-
+    click_on('Add Shelter')
+    expect(current_path).to eq("/shelters")
     page.has_content?('Shelter 4, new')
-
   end
 end

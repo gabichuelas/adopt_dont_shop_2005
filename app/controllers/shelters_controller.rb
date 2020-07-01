@@ -12,15 +12,8 @@ class SheltersController < ApplicationController
   end
 
   def create
-    shelter = Shelter.new({
-      name: params[:shelter][:name],
-      address: params[:shelter][:address],
-      city: params[:shelter][:city],
-      state: params[:shelter][:state],
-      zip: params[:shelter][:zip]
-      })
-    shelter.save
-    redirect_to '/shelters'
+    shelter = Shelter.create(shelter_params)
+    redirect_to "/shelters"
   end
 
   def edit
@@ -30,5 +23,10 @@ class SheltersController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+  def shelter_params
+    params.permit(:name, :address, :city, :state, :zip)
   end
 end
