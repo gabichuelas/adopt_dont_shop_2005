@@ -6,3 +6,4 @@
       <%= @shelter.zip %>
     </p>
 </div>
+<%= button_to 'Delete Shelter', "/shelters/#{@shelter.id}", method: :delete %>

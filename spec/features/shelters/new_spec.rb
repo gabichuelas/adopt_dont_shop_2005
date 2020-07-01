@@ -1,5 +1,5 @@
 RSpec.describe "create new shelter", type: :feature do
-  it "uses 'new shelter' link to visit /shelters/new, fill out form, and save new shelter" do
+  it "uses 'new shelter' link to visit /shelters/new, fill out form, save new shelter, and redirect to index" do
 
     visit "/shelters"
     click_link "New Shelter"
