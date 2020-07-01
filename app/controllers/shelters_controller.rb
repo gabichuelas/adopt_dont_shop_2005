@@ -1,4 +1,8 @@
 class SheltersController < ApplicationController
+  # add before_action :set_article, only:
+  # like a setup, so our code is DRY
+  # look in Blogger under Edit Action & View
+  
   def index
     @shelters = Shelter.all
   end
