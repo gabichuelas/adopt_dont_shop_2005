@@ -379,6 +379,24 @@
           null
         ]
       },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/models/shelter_spec.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/shelter.rb": {
         "lines": [
           1,
@@ -452,6 +470,6 @@
         ]
       }
     },
-    "timestamp": 1593663710
+    "timestamp": 1593717896
   }
 }
