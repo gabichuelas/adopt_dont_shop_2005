@@ -234,9 +234,9 @@
           null,
           1,
           1,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           0,
           0,
@@ -349,6 +349,9 @@
           1,
           1,
           2,
+          2,
+          2,
+          2,
           null,
           null,
           1,
@@ -359,6 +362,9 @@
       },
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/pet.rb": {
         "lines": [
+          1,
+          1,
+          1,
           1,
           1,
           1,
@@ -434,6 +440,6 @@
         ]
       }
     },
-    "timestamp": 1593658446
+    "timestamp": 1593659675
   }
 }
