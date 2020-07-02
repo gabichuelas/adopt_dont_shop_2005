@@ -9,9 +9,9 @@ RSpec.describe "visit /shelters index, see all", type: :feature do
 
     visit "/shelters"
 
-    page.has_content?(shelter1.name)
-    page.has_content?(shelter2.name)
-    page.has_link?(shelter1.name)
-    page.has_link?(shelter2.name)
+    expect(page).to have_content(shelter1.name)
+    expect(page).to have_content(shelter2.name)
+    expect(page).to have_link(shelter1.name)
+    expect(page).to have_link(shelter1.name)
   end
 end

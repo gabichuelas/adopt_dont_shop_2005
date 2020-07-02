@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-01T20:58:05-04:00">2020-07-01T20:58:05-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-07-01T22:32:16-04:00">2020-07-01T22:32:16-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>121</b> relevant lines,
-    <span class="green"><b>121</b> lines covered</span> and
+    <b>122</b> relevant lines,
+    <span class="green"><b>122</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -260,9 +260,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c11f1ccb2301b702528e1d23cb24f48ade5ad8d6" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -293,7 +293,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ff4ad12b93589e847c86e76ef1653c1b813267f2" class="src_link" title="spec/features/shelters/index_spec.rb">spec/features/shelters/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">17</td>
+            <td class="cell--number">22</td>
             <td class="cell--number">9</td>
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
@@ -3158,8 +3158,8 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3199,7 +3199,7 @@
 
             
 
-            <code class="ruby">  get &#39;/shelters&#39;, to: &#39;shelters#index&#39;</code>
+            <code class="ruby">  get &#39;/&#39;, to: &#39;shelters#index&#39;</code>
           </li>
         </div>
       
@@ -3210,7 +3210,7 @@
 
             
 
-            <code class="ruby">  get &#39;/shelters/new&#39;, to: &#39;shelters#new&#39;</code>
+            <code class="ruby">  get &#39;/shelters&#39;, to: &#39;shelters#index&#39;</code>
           </li>
         </div>
       
@@ -3221,7 +3221,7 @@
 
             
 
-            <code class="ruby">  post &#39;/shelters&#39;, to: &#39;shelters#create&#39;</code>
+            <code class="ruby">  get &#39;/shelters/new&#39;, to: &#39;shelters#new&#39;</code>
           </li>
         </div>
       
@@ -3232,7 +3232,7 @@
 
             
 
-            <code class="ruby">  get &#39;/shelters/:id&#39;, to: &#39;shelters#show&#39;</code>
+            <code class="ruby">  post &#39;/shelters&#39;, to: &#39;shelters#create&#39;</code>
           </li>
         </div>
       
@@ -3243,7 +3243,7 @@
 
             
 
-            <code class="ruby">  get &#39;/shelters/:id/edit&#39;, to: &#39;shelters#edit&#39;</code>
+            <code class="ruby">  get &#39;/shelters/:id&#39;, to: &#39;shelters#show&#39;</code>
           </li>
         </div>
       
@@ -3254,7 +3254,7 @@
 
             
 
-            <code class="ruby">  put &#39;/shelters/:id&#39;, to: &#39;shelters#update&#39;</code>
+            <code class="ruby">  get &#39;/shelters/:id/edit&#39;, to: &#39;shelters#edit&#39;</code>
           </li>
         </div>
       
@@ -3265,7 +3265,7 @@
 
             
 
-            <code class="ruby">  patch &#39;/shelters/:id&#39;, to: &#39;shelters#update&#39;</code>
+            <code class="ruby">  put &#39;/shelters/:id&#39;, to: &#39;shelters#update&#39;</code>
           </li>
         </div>
       
@@ -3276,12 +3276,23 @@
 
             
 
+            <code class="ruby">  patch &#39;/shelters/:id&#39;, to: &#39;shelters#update&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  delete &#39;/shelters/:id&#39;, to: &#39;shelters#destroy&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -3809,7 +3820,7 @@
 
             
 
-            <code class="ruby">    page.has_content?(shelter1.name)</code>
+            <code class="ruby">    expect(page).to have_content(shelter1.name)</code>
           </li>
         </div>
       
@@ -3820,7 +3831,7 @@
 
             
 
-            <code class="ruby">    page.has_content?(shelter2.name)</code>
+            <code class="ruby">    expect(page).to have_content(shelter2.name)</code>
           </li>
         </div>
       
@@ -3831,7 +3842,7 @@
 
             
 
-            <code class="ruby">    page.has_link?(shelter1.name)</code>
+            <code class="ruby">    expect(page).to have_link(shelter1.name)</code>
           </li>
         </div>
       
@@ -3842,7 +3853,7 @@
 
             
 
-            <code class="ruby">    page.has_link?(shelter2.name)</code>
+            <code class="ruby">    expect(page).to have_link(shelter1.name)</code>
           </li>
         </div>
       
@@ -3853,12 +3864,67 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    # page.has_content?(shelter1.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    # page.has_content?(shelter2.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">    # page.has_link?(shelter1.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    # page.has_link?(shelter2.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
