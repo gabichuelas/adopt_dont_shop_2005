@@ -5,10 +5,10 @@ RSpec.describe "visit /shelters/id", type: :feature do
     visit "/shelters"
     click_link(shelter1.name)
 
-    page.has_content?(shelter1.name)
-    page.has_content?(shelter1.address)
-    page.has_content?(shelter1.city)
-    page.has_content?(shelter1.state)
-    page.has_content?(shelter1.zip)
+    expect(page).to have_content(shelter1.name)
+    expect(page).to have_content(shelter1.address)
+    expect(page).to have_content(shelter1.city)
+    expect(page).to have_content(shelter1.state)
+    expect(page).to have_content(shelter1.zip)
   end
 end

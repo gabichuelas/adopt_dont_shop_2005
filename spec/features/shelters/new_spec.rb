@@ -12,6 +12,6 @@ RSpec.describe "create new shelter", type: :feature do
 
     click_on('Add Shelter')
     expect(current_path).to eq("/shelters")
-    page.has_content?('Shelter 4, new')
+    expect(page).to have_content('Shelter 4, new')
   end
 end

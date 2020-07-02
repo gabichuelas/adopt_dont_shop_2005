@@ -7,6 +7,6 @@ RSpec.describe "destroy existing shelter", type: :feature do
     click_on "Delete Shelter"
     expect(current_path).to eq("/shelters")
 
-    page.has_no_content?('Shelter 1')
+    expect(page).to_not have_content('Shelter 1')
   end
 end
