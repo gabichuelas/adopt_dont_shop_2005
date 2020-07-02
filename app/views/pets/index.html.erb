@@ -1,10 +1,10 @@
 <h1 class='page-title'>Pet List</h1>
 <ul id="pets-index">
   <% @pets.each do |pet| %>
-    <!-- <li><%= pet.image %></li> -->
-    <p><%= pet.name %></p>
-    <p><%= pet.approx_age %></p>
-    <p><%= pet.sex %></p>
-    <p><%= pet.shelter.name %></p>
+    <%= image_tag(pet.image, alt: "Australian Cattle Dog", method: :get) %>
+    <h3>Name: <%= pet.name %></h3>
+    <p>Approximate Age: <%= pet.approx_age %></p>
+    <p>Sex: <%= pet.sex %></p>
+    <p>Shelter: <%= pet.shelter.name %></p>
   <% end %>
 </ul>

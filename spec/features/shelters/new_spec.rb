@@ -8,6 +8,7 @@ RSpec.describe "create new shelter", type: :feature do
     fill_in('name', with: 'Shelter 4, new')
     fill_in('address', with: '4242 Granada Blvd.')
     fill_in('city', with: 'Miami')
+    fill_in('state', with: 'Florida')
     fill_in('zip', with: 33703)
 
     click_on('Add Shelter')

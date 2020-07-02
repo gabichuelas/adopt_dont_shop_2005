@@ -239,11 +239,11 @@
           1,
           null,
           1,
-          1,
-          1,
-          null,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
+          0,
           null,
           null,
           null
@@ -298,9 +298,9 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -314,6 +314,7 @@
           1,
           1,
           null,
+          1,
           1,
           1,
           1,
@@ -381,7 +382,8 @@
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/shelter.rb": {
         "lines": [
           1,
-          null,
+          1,
+          1,
           null
         ]
       },
@@ -449,6 +451,6 @@
         ]
       }
     },
-    "timestamp": 1593660026
+    "timestamp": 1593661903
   }
 }

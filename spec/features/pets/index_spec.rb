@@ -8,10 +8,10 @@ RSpec.describe 'as a visitor' do
 
       visit '/pets'
 
-      expect(page).to have_content(pet1.name)
-      expect(page).to have_content(pet1.approx_age)
-      expect(page).to have_content(pet1.sex)
-      # expect(page).to have_content(pet1.image)
+      expect(page).to have_content("Name: #{pet1.name}")
+      expect(page).to have_content("Approximate Age: #{pet1.approx_age}")
+      expect(page).to have_content("Sex: #{pet1.sex}")
+      expect(page).to have_content(pet1.image)
       expect(page).to have_content("Braun Farm")
       expect(page).to have_content(pet2.name)
     end
