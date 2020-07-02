@@ -241,7 +241,7 @@
           0,
           0,
           0,
-          0,
+          null,
           0,
           0,
           null,
@@ -385,6 +385,22 @@
           null
         ]
       },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
         "lines": [
           1,
@@ -431,15 +447,8 @@
           null,
           null
         ]
-      },
-      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1593659675
+    "timestamp": 1593659790
   }
 }
