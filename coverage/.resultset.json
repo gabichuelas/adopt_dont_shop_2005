@@ -232,8 +232,8 @@
           1,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           0,
           null,
           0,
@@ -254,13 +254,13 @@
           1,
           1,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
-          0,
+          1,
           null,
           null
         ]
@@ -270,16 +270,16 @@
           1,
           1,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -292,15 +292,15 @@
           null,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -310,18 +310,18 @@
           1,
           1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -330,16 +330,16 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -347,17 +347,93 @@
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/models/pet_spec.rb": {
         "lines": [
           1,
-          0,
-          0,
+          1,
+          2,
           null,
           null,
-          0,
-          0,
+          1,
+          2,
           null,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/pet.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/models/shelter.rb": {
+        "lines": [
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/shelters_controller.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          5,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1593658307
+    "timestamp": 1593658446
   }
 }
