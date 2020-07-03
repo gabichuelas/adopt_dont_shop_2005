@@ -219,6 +219,7 @@
           1,
           null,
           1,
+          1,
           null
         ]
       },
@@ -249,6 +250,28 @@
           1,
           1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/pets/show_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           null,
           null
         ]
@@ -443,13 +466,13 @@
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/app/controllers/pets_controller.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
           null,
           null,
-          null,
-          null,
-          null,
+          1,
+          1,
           null,
           null,
           null
@@ -515,6 +538,6 @@
         ]
       }
     },
-    "timestamp": 1593795284
+    "timestamp": 1593801093
   }
 }

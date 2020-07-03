@@ -1,0 +1,8 @@
+<h1 class='page-title'><%= @pet.name %></h1>
+<div id="pet-details">
+  <img><%= image_tag(@pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
+  <p>Approximate Age: <%= @pet.approx_age %></p>
+  <p>Sex: <%= @pet.sex %></p>
+  <p>Description: <%= @pet.description %></p>
+  <p>Status: <%= @pet.status %></p>
+</div>
