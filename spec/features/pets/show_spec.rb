@@ -7,7 +7,7 @@ RSpec.describe 'as a visitor' do
 
     visit "/pets/#{pet1.id}"
 
-    expect(page).to have_content("Name: Noodle")
+    expect(page).to have_content("Noodle")
     expect(page).to have_content("description of noodle")
     expect(page).to have_content("Approximate Age: 3")
     expect(page).to have_content("Sex: male")
