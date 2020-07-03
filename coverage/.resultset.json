@@ -254,6 +254,41 @@
           null
         ]
       },
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/pets/new_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/pets/show_spec.rb": {
         "lines": [
           1,
@@ -525,8 +560,8 @@
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
@@ -538,6 +573,6 @@
         ]
       }
     },
-    "timestamp": 1593801093
+    "timestamp": 1593802192
   }
 }
