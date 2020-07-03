@@ -2,7 +2,7 @@ class SheltersController < ApplicationController
   # add before_action :set_article, only:
   # like a setup, so our code is DRY
   # look in Blogger under Edit Action & View
-  
+
   def index
     @shelters = Shelter.all
   end
@@ -33,6 +33,11 @@ class SheltersController < ApplicationController
   def destroy
     Shelter.destroy(params[:id])
     redirect_to "/shelters"
+  end
+
+  def pets_index
+    @shelter = Shelter.find(params[:shelter_id])
+    @pets = @shelter.pets
   end
 
   private
