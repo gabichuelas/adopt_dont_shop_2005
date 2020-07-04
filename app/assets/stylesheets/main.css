@@ -57,14 +57,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
 header {
   align-self: center;
   display: flex;
-  width: 50%;
+  width: 60%;
   justify-content: space-between;
   align-items: baseline;
   margin: 40px 40px 40px 40px;
@@ -86,7 +86,7 @@ header {
 }
 
 main {
-  width: 50%;
+  width: 60%;
   align-self: center;
   /* background-color: #fff; */
 }
@@ -125,4 +125,56 @@ main {
 
 .options a:hover {
   color: red;
+}
+
+#pets-index {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+  /* background-color: #ddd; */
+  /* margin: 0px 0 20px 0px; */
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.pet-card {
+  min-width: 320px;
+  max-width: 40%;
+  margin: 0px 30px 40px 0px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.pet-details {
+  padding: 15px 15px 5px 20px;
+
+}
+
+.pet-name {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.pet-details p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#pets-index .options {
+  /* background-color: red; */
+  margin: 0 15px 15px 5px;
+  text-align: right;
+}
+
+#pets-index .options a {
+  padding-left: 15px;
 }
