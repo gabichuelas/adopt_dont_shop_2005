@@ -4,13 +4,15 @@
 <ul id="pets-index">
   <% @pets.each do |pet| %>
     <% if pet.shelter_id == @shelter.id %>
-      <%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
+      <img><%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
       <h3>Name: <%= pet.name %></h3>
       <p>Approximate Age: <%= pet.approx_age %></p>
       <p>Sex: <%= pet.sex %></p>
       <p>Status: <%= pet.status %></p>
-      <a><%= link_to 'Edit', "/pets/#{pet.id}/edit" %></a>
-      <a><%= link_to 'Delete', "/pets/#{pet.id}" %></a>
+      <div class='link_options'>
+        <a><%= link_to 'Edit', "/pets/#{pet.id}/edit" %></a>
+        <a><%= link_to 'Delete', "/pets/#{pet.id}", method: :delete %></a>
+      </div>
     <% else %>
     <% end %>
   <% end %>

@@ -2,8 +2,10 @@
 <ul id="shelters-index">
   <% @shelters.each do |shelter| %>
     <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
-    <a><%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %></a>
-    <a><%= link_to 'Delete', "/shelters/#{shelter.id}" %></a>
+    <div class='link_options'>
+      <a><%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %></a>
+      <a><%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete %></a>
+    </div>
   <% end %>
 </ul>
 <%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
