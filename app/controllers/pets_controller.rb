@@ -28,6 +28,9 @@ class PetsController < ApplicationController
     redirect_to "/pets/#{@pet.id}"
   end
 
+  def destroy
+  end 
+
   private
   def pet_params
     params.permit(:name, :approx_age, :description, :sex, :image, :status)
