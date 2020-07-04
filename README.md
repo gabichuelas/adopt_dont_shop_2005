@@ -266,7 +266,7 @@ and I am redirected to the Shelter Pets Index page where I can see the new pet l
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 11, Pet Update
 
@@ -287,7 +287,7 @@ and I am redirected to the Pet Show page where I see the Pet's updated informati
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 12, Pet Delete
 
