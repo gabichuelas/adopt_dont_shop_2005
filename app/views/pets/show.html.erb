@@ -8,6 +8,6 @@
 </div>
 
 <div class='options'>
-  <a><%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %></a>
-  <a><%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %></a>
+  <%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
+  <%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
 </div>
