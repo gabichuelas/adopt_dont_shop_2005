@@ -1,0 +1,83 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #444;
+}
+
+a {
+  color: #444;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #eee;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0px 0px 20px;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+#main-nav {
+  display: flex;
+  width: 70%;
+  align-self: center;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+  padding: 15px 0px 15px 0px;
+  /* background-color: #fff; */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#main-nav a {
+  padding: 0px 10px 0px 10px;
+}
