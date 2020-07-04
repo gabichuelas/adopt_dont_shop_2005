@@ -9,6 +9,8 @@
       <p>Approximate Age: <%= pet.approx_age %></p>
       <p>Sex: <%= pet.sex %></p>
       <p>Status: <%= pet.status %></p>
+      <a><%= link_to 'Edit', "/pets/#{pet.id}/edit" %></a>
+      <a><%= link_to 'Delete', "/pets/#{pet.id}" %></a>
     <% else %>
     <% end %>
   <% end %>
