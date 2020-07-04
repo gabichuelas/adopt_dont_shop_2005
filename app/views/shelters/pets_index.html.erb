@@ -3,17 +3,16 @@
 <p><%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %></p>
 <ul id="pets-index">
   <% @pets.each do |pet| %>
-    <% if pet.shelter_id == @shelter.id %>
-      <img><%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
-      <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
-      <p>Approximate Age: <%= pet.approx_age %></p>
-      <p>Sex: <%= pet.sex %></p>
-      <p>Status: <%= pet.status %></p>
-      <div class='options'>
-        <a><%= link_to 'Update', "/pets/#{pet.id}/edit" %></a>
-        <a><%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %></a>
-      </div>
-    <% else %>
-    <% end %>
+
+    <img><%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
+    <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
+    <p>Approximate Age: <%= pet.approx_age %></p>
+    <p>Sex: <%= pet.sex %></p>
+    <p>Status: <%= pet.status %></p>
+    <div class='options'>
+      <a><%= link_to 'Update', "/pets/#{pet.id}/edit" %></a>
+      <a><%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %></a>
+    </div>
+
   <% end %>
 </ul>
