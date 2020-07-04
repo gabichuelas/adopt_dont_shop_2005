@@ -10,5 +10,8 @@ RSpec.describe "visit /shelters/id", type: :feature do
     expect(page).to have_content(shelter1.city)
     expect(page).to have_content(shelter1.state)
     expect(page).to have_content(shelter1.zip)
+
+    expect(page).to have_selector(:link_or_button, 'Update Shelter')
+    expect(page).to have_selector(:link_or_button, 'Delete Shelter')
   end
 end
