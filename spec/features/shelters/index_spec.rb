@@ -13,5 +13,6 @@ RSpec.describe "visit /shelters index, see all", type: :feature do
     expect(page).to have_content(shelter2.name)
     expect(page).to have_link(shelter1.name)
     expect(page).to have_link(shelter1.name)
+    expect(page).to have_link('Edit')
   end
 end
