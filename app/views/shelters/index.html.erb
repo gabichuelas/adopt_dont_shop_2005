@@ -3,7 +3,7 @@
   <% @shelters.each do |shelter| %>
     <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
     <a><%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %></a>
-    
+    <a><%= link_to 'Delete', "/shelters/#{shelter.id}" %></a>
   <% end %>
 </ul>
 <%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
