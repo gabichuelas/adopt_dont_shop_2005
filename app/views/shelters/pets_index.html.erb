@@ -9,9 +9,9 @@
       <p>Approximate Age: <%= pet.approx_age %></p>
       <p>Sex: <%= pet.sex %></p>
       <p>Status: <%= pet.status %></p>
-      <div class='link_options'>
-        <a><%= link_to 'Edit', "/pets/#{pet.id}/edit" %></a>
-        <a><%= link_to 'Delete', "/pets/#{pet.id}", method: :delete %></a>
+      <div class='options'>
+        <a><%= link_to 'Update', "/pets/#{pet.id}/edit" %></a>
+        <a><%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %></a>
       </div>
     <% else %>
     <% end %>

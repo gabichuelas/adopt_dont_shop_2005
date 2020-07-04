@@ -4,8 +4,11 @@
     <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
     <div class='link_options'>
       <a><%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %></a>
-      <a><%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete %></a>
+      <a><%= button_to 'Delete', "/shelters/#{shelter.id}", method: :delete %></a>
     </div>
   <% end %>
 </ul>
-<%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
+
+<div class='options'>
+  <a><%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %></a>
+</div>
