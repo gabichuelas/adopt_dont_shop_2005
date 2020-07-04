@@ -1,7 +1,19 @@
+<nav id="main-nav">
+  <%= link_to 'Shelters', "/shelters" %>
+  <%= link_to 'Pets', "/pets" %>
+</nav>
+
 <h1 class='page-title'>Shelter List</h1>
 <ul id="shelters-index">
   <% @shelters.each do |shelter| %>
     <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
+    <div class='options'>
+      <%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %>
+      <%= button_to 'Delete', "/shelters/#{shelter.id}", method: :delete %>
+    </div>
   <% end %>
 </ul>
-<%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
+
+<div class='options'>
+  <%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
+</div>

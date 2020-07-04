@@ -16,6 +16,9 @@ RSpec.describe 'as a visitor' do
 
       expect(page).to have_content("Braun Farm")
       expect(page).to have_content("Marley")
+
+      expect(page).to have_selector(:link_or_button, 'Update')
+      expect(page).to have_selector(:link_or_button, 'Delete')
     end
   end
 end

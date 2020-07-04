@@ -1,10 +1,19 @@
+<nav id="main-nav">
+  <%= link_to 'Shelters', "/shelters" %>
+  <%= link_to 'Pets', "/pets" %>
+</nav>
+
 <h1 class='page-title'>Pet List</h1>
 <ul id="pets-index">
   <% @pets.each do |pet| %>
     <%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
-    <h3>Name: <%= pet.name %></h3>
+    <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
     <p>Approximate Age: <%= pet.approx_age %></p>
     <p>Sex: <%= pet.sex %></p>
-    <p>Shelter: <%= pet.shelter.name %></p>
+    <p>Shelter: <%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %></p>
+    <div class='options'>
+      <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
+      <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
+    </div>
   <% end %>
 </ul>

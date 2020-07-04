@@ -1,3 +1,8 @@
+<nav id="main-nav">
+  <%= link_to 'Shelters', "/shelters" %>
+  <%= link_to 'Pets', "/pets" %>
+</nav>
+
 <h1 class='page-title'><%= @pet.name %></h1>
 <div id="pet-details">
   <img><%= image_tag(@pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
@@ -6,5 +11,8 @@
   <p>Description: <%= @pet.description %></p>
   <p>Status: <%= @pet.status %></p>
 </div>
-<p><%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %></p>
-<%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
+
+<div class='options'>
+  <%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
+  <%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
+</div>

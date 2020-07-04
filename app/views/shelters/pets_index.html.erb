@@ -1,15 +1,23 @@
+<nav id="main-nav">
+  <%= link_to 'Shelters', "/shelters" %>
+  <%= link_to 'Pets', "/pets" %>
+</nav>
+
 <h1 class='page-title'>Available Pets</h1>
-<h2 class='page-subtitle'><%= @shelter.name %></h2>
+<h2 class='page-subtitle'><%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></h2>
 <p><%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %></p>
 <ul id="pets-index">
   <% @pets.each do |pet| %>
-    <% if pet.shelter_id == @shelter.id %>
-      <%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
-      <h3>Name: <%= pet.name %></h3>
-      <p>Approximate Age: <%= pet.approx_age %></p>
-      <p>Sex: <%= pet.sex %></p>
-      <p>Status: <%= pet.status %></p>
-    <% else %>
-    <% end %>
+
+    <img><%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
+    <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
+    <p>Approximate Age: <%= pet.approx_age %></p>
+    <p>Sex: <%= pet.sex %></p>
+    <p>Status: <%= pet.status %></p>
+    <div class='options'>
+      <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
+      <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
+    </div>
+
   <% end %>
 </ul>
