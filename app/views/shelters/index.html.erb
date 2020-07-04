@@ -1,3 +1,8 @@
+<nav id="main-nav">
+  <%= link_to 'Shelters', "/shelters" %>
+  <%= link_to 'Pets', "/pets" %>
+</nav>
+
 <h1 class='page-title'>Shelter List</h1>
 <ul id="shelters-index">
   <% @shelters.each do |shelter| %>
