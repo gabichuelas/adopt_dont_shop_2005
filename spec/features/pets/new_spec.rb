@@ -21,11 +21,13 @@ RSpec.describe 'as a visitor' do
     # come back to this and create an upload interface
 
     click_on 'Save Pet'
+    new_pet = Pet.last
+
     expect(current_path).to eq("/shelters/#{shelter.id}/pets")
 
     expect(page).to have_content("Name: Bella")
-    expect(page).to have_content("Status: adoptable")
     expect(page).to have_content("Braun Farm")
+    expect(page).to have_content(new_pet.status)
 
   end
 end
