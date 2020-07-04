@@ -339,7 +339,7 @@
           null
         ]
       },
-      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/shelters/destroy_spec.rb": {
+      "/Users/gabymendez/turing/2module/projects/adopt_dont_shop_2005/spec/features/shelters/delete_spec.rb": {
         "lines": [
           1,
           1,
@@ -627,6 +627,6 @@
         ]
       }
     },
-    "timestamp": 1593876234
+    "timestamp": 1593876576
   }
 }
