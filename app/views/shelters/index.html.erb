@@ -1,28 +1,30 @@
 <body>
   <header>
-    <h1>Adopt Don't Shop - 2005</h1>
-  </header>
-  <nav id="main-nav">
+    <h4>Turing Mod 2: Adopt Don't Shop</h4>
+    <span id='main-nav'>
       <%= link_to 'Shelters', "/shelters" %>
       <%= link_to 'Pets', "/pets" %>
-  </nav>
+    </span>
+  </header>
 
   <main>
-    <section>
-      <h1 class='page-title'>Shelter List</h1>
-      <ul id="shelters-index">
-        <% @shelters.each do |shelter| %>
-          <li><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></li>
-          <div class='options'>
-            <%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %>
-            <%= button_to 'Delete', "/shelters/#{shelter.id}", method: :delete %>
-          </div>
-        <% end %>
-      </ul>
 
-      <div class='options'>
-        <%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
-      </div>
+    <section class='page-options'>
+      <h2 class='page-title'>Shelter List</h2>
+      <%= link_to 'New Shelter', '/shelters/new', class: 'new-shelter-link' %>
+    </section>
+
+    <section id='shelter-index'>
+      <% @shelters.each do |shelter| %>
+          <div>
+            <h4><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></h4>
+            <span class='options'>
+              <%= link_to 'Edit', "/shelters/#{shelter.id}/edit" %>
+              <span> | </span>
+              <%= link_to 'Delete', "/shelters/#{shelter.id}", method: :delete %>
+            </span>
+          </div>
+      <% end %>
     </section>
   </main>
 </body>
