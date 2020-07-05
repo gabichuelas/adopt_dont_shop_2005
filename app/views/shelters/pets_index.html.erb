@@ -8,7 +8,7 @@
   </header>
   <main>
     <section class='page-options'>
-      <h2 class='page-title'>Available Pets: <%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %></h2>
+      <h2 class='page-title'>Available Pets: <%= link_to "#{@shelter.name}", "/shelters/#{@shelter.id}" %> <small>(<%= @pets.count %> pets)</small></h2>
       <%= link_to 'Create Pet', "/shelters/#{@shelter.id}/pets/new" %>
     </section>
 

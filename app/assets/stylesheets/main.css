@@ -112,6 +112,13 @@ main {
   font-weight: 600;
 }
 
+.page-options small {
+	/* font-style: italic; */
+	font-weight: 200;
+	font-size: .6em;
+	opacity: 70%;
+}
+
 #shelter-index div {
   width: 100%;
   display: flex;
