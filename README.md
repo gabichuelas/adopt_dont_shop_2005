@@ -417,7 +417,7 @@ Then I should see a reasonably well styled page
 ## Extensions
 
 ```
-[ ] done
+[X] done
 
 User Story 23, Shelter Pet Count
 
@@ -469,7 +469,7 @@ and I am redirected to the Pet Show page where I see the pet's status has been c
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 27, Sort Shelters by number of adoptable pets
 
@@ -481,7 +481,7 @@ I'm taken back to the Shelters Index Page where I see all of the shelters in ord
 ```
 
 ```
-[ ] done
+[X] done
 
 User Story 28, Sort Shelters in Alphabetical Order
 

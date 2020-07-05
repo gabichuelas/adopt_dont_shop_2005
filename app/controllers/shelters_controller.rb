@@ -5,6 +5,8 @@ class SheltersController < ApplicationController
 
   def index
     @shelters = Shelter.all
+    @alpha_shelters = Shelter.sort_alphabetically
+    @pet_count_shelters = Shelter.sort_pet_count
   end
 
   def show

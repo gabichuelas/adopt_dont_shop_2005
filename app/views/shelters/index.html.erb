@@ -15,7 +15,7 @@
     </section>
 
     <section id='shelter-index'>
-      <% @shelters.each do |shelter| %>
+      <% @alpha_shelters.each do |shelter| %>
           <div>
             <h4><%= link_to shelter.name, "/shelters/#{shelter.id}", class: 'shelter-name' %></h4>
             <span class='options'>
