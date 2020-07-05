@@ -1,6 +1,32 @@
 # Adopt Don't Shop
 BE Mod 2 Week 1 Solo Project
 
+### Project Retro
+
+**TLDR;** Didn't enjoy this as much as I wanted and expected to, BUT I do feel like I hit all the `learning goals` so that's a WIN.
+
+**Long Version:** <br>
+I was not stoked on this project. Mostly I feel like I spent way too long up front trying to figure out the basics, and once I had that down, I realized that the scattered nature of the workflow for Rails (I'm sure it just feels scattered now, but it's like I was constantly chasing down little bits here and there and the order was always different, and I kept forgetting steps along the way) was _extremely_ tedious.
+
+Writing tests is probably what I need the most practice on. I felt like my test descriptions did not follow a consistent format and I kept changing my mind on that format every time I wrote a new test.
+
+As I moved through the project and learned more and more, I realized that I was loathe to change/fix things because of the long "paper trail" if you will that I was going to have to follow to make even the most minute of changes. This had the undesired side effect of sapping most of my motivation.
+
+As I predicted, I spent far too long on styling, which is still garbage, but that's expected considering my html/css skills are novice-level, and it's not like coming up with a design system was part of the project or learning goals.
+
+I wanted to use that time spent on styling instead on deep diving into some Rails specific tooling. Some things I glossed over and really wanted to explore further were:
+
+* using more helpers in general
+* `before :each` in testing (and also ways I can make my model defs better)
+* creating drop-downs and using `t.collection_check_boxes`
+* ActiveStorage _(unecessarily complex for this use case, but I'm still curious)_
+* adding a third Controller instead of `shelters#pets_index`
+* Rails callbacks, maybe for writing better functionality concerning `status: adoptable`
+* form helpers _(and different ways to arrange a form / change label action when I don't have the raw html in front of me)_
+* figuring out what other Capybara DSL I should be using in my tests _(using `have_content` for everything didn't feel right)_
+* having time and interest to organize css effectively and more sustainably instead of hacking it together
+* ETC ETC.
+
 ## Learning Goals
 
 ### Rails
