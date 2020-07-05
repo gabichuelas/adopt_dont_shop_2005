@@ -25,9 +25,8 @@ RSpec.describe 'as a visitor' do
 
     expect(current_path).to eq("/shelters/#{shelter.id}/pets")
 
-    expect(page).to have_content("Name: Bella")
+    expect(page).to have_content("Bella")
     expect(page).to have_content("Braun Farm")
-    expect(page).to have_content(new_pet.status)
 
   end
 end

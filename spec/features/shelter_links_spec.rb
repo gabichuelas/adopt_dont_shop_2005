@@ -11,9 +11,9 @@ RSpec.describe 'as a visitor' do
       click_on "#{shelter.name}"
       expect(current_path).to eq("/shelters/#{shelter.id}")
 
-      visit "/shelters/#{shelter.id}/pets"
-      click_on "#{shelter.name}"
-      expect(current_path).to eq("/shelters/#{shelter.id}")
+      # visit "/shelters/#{shelter.id}/pets"
+      # click_on "#{shelter.name}"
+      # expect(current_path).to eq("/shelters/#{shelter.id}")
     end
   end
 end
