@@ -1,20 +1,25 @@
-<nav id="main-nav">
-  <%= link_to 'Shelters', "/shelters" %>
-  <%= link_to 'Pets', "/pets" %>
-</nav>
-
-<h1>Add New Pet</h1>
-<%= form_tag "/shelters/#{@shelter.id}/pets" do %>
-  <%= label_tag :name %><br>
-  <%= text_field_tag :name %><br>
-  <%= label_tag :age %><br>
-  <%= text_field_tag :approx_age %><br>
-  <%= label_tag :description %><br>
-  <%= text_field_tag :description %><br>
-  <%= label_tag :sex %><br>
-  <%= text_field_tag :sex %><br>
-  <%= label_tag :image %><br>
-  <%= text_field_tag :image %><br>
-  <%= text_field_tag :status, 'adoptable', :readonly => true %><br>
-  <%= submit_tag 'Save Pet' %>
-<% end %>
+<body>
+  <header>
+    <h4>Turing Mod 2: Adopt Don't Shop</h4>
+    <span id='main-nav'>
+      <%= link_to 'Shelters', "/shelters" %>
+      <%= link_to 'Pets', "/pets" %>
+    </span>
+  </header>
+  <main>
+    <section class='page-options'>
+      <h2 class='page-title'>Add New Pet</h2>
+    </section>
+    <section>
+      <%= form_tag "/shelters/#{@shelter.id}/pets", class: 'edit-form' do %>
+        <%= text_field_tag :name, 'Name' %><br>
+        <%= text_field_tag :approx_age, 'Age' %><br>
+        <%= text_field_tag :description, 'Description' %><br>
+        <%= text_field_tag :sex, 'Sex' %><br>
+        <%= text_field_tag :image, 'Image URL' %><br>
+        <%= text_field_tag :status, 'Adoptable', :readonly => true %><br>
+        <%= submit_tag 'Save Pet', class: 'submit' %>
+      <% end %>
+    </section>
+  </main>
+</body>
