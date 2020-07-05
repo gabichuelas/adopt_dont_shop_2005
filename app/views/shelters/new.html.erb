@@ -1,20 +1,24 @@
-<nav id="main-nav">
-  <%= link_to 'Shelters', "/shelters" %>
-  <%= link_to 'Pets', "/pets" %>
-</nav>
-
-<h1 class='page-title'>Add New Shelter</h1>
-
-<%= form_tag '/shelters' do %>
-  <%= label_tag :name %><br>
-  <%= text_field_tag :name %><br>
-  <%= label_tag :address %><br>
-  <%= text_field_tag :address %><br>
-  <%= label_tag :city %><br>
-  <%= text_field_tag :city %><br>
-  <%= label_tag :state %><br>
-  <%= text_field_tag :state %><br>
-  <%= label_tag :zip %><br>
-  <%= text_field_tag :zip %><br>
-  <%= submit_tag 'Add Shelter' %>
-<% end %>
+<body>
+  <header>
+    <h4>Turing Mod 2: Adopt Don't Shop</h4>
+    <span id='main-nav'>
+      <%= link_to 'Shelters', "/shelters" %>
+      <%= link_to 'Pets', "/pets" %>
+    </span>
+  </header>
+  <main>
+    <section class='page-options'>
+      <h2 class='page-title'>Add New Shelter</h2>
+    </section>
+    <section>
+      <%= form_tag '/shelters', class: 'edit-form' do %>
+        <%= text_field_tag :name, 'Name' %><br>
+        <%= text_field_tag :address, 'Address' %><br>
+        <%= text_field_tag :city, 'City' %><br>
+        <%= text_field_tag :state, 'State' %><br>
+        <%= text_field_tag :zip, 'Zip Code' %><br>
+        <%= submit_tag 'Add Shelter', class: 'submit' %>
+      <% end %>
+    </section>
+  </main>
+</body>

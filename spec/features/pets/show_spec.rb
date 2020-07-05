@@ -9,13 +9,13 @@ RSpec.describe 'as a visitor' do
 
     expect(page).to have_content("Noodle")
     expect(page).to have_content("description of noodle")
-    expect(page).to have_content("Approximate Age: 3")
-    expect(page).to have_content("Sex: male")
+    expect(page).to have_content("3")
+    expect(page).to have_content("male")
     expect(page).to have_xpath("//img[@src = 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13001403/Australian-Cattle-Dog-On-White-03.jpg' and @alt='photo of pet']")
 
-    expect(page).to have_content("Status: adoptable")
+    expect(page).to have_content("adoptable")
 
-    expect(page).to have_selector(:link_or_button, 'Update Pet')
-    expect(page).to have_selector(:link_or_button, 'Delete Pet')
+    expect(page).to have_selector(:link_or_button, 'Update')
+    expect(page).to have_selector(:link_or_button, 'Delete')
   end
 end

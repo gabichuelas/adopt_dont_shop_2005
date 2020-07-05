@@ -12,9 +12,9 @@ RSpec.describe 'As a visitor' do
 
     visit "/shelters/#{shelter.id}/pets"
 
-    expect(page).to have_content("Name: Noodle")
-    expect(page).to have_content("Approximate Age: #{pet1.approx_age}")
-    expect(page).to have_content("Sex: male")
+    expect(page).to have_content("Noodle")
+    expect(page).to have_content("#{pet1.approx_age}")
+    expect(page).to have_content("male")
 
     expect(page).to have_xpath("//img[@src = 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13001403/Australian-Cattle-Dog-On-White-03.jpg' and @alt='photo of pet']")
 

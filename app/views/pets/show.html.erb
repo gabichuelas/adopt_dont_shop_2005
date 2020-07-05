@@ -1,18 +1,29 @@
-<nav id="main-nav">
-  <%= link_to 'Shelters', "/shelters" %>
-  <%= link_to 'Pets', "/pets" %>
-</nav>
+<body>
+  <header>
+    <h4>Turing Mod 2: Adopt Don't Shop</h4>
+    <span id='main-nav'>
+      <%= link_to 'Shelters', "/shelters" %>
+      <%= link_to 'Pets', "/pets" %>
+    </span>
+  </header>
+  <main>
+    <section class='page-options'>
+      <h2 class='page-title'><%= @pet.name %></h2>
+      <span>status: <strong><%= @pet.status %></strong></span>
+    </section>
+    <section id='pet-detail'>
 
-<h1 class='page-title'><%= @pet.name %></h1>
-<div id="pet-details">
-  <img><%= image_tag(@pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %></img>
-  <p>Approximate Age: <%= @pet.approx_age %></p>
-  <p>Sex: <%= @pet.sex %></p>
-  <p>Description: <%= @pet.description %></p>
-  <p>Status: <%= @pet.status %></p>
-</div>
+      <%= image_tag(@pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
 
-<div class='options'>
-  <%= link_to 'Update Pet', "/pets/#{@pet.id}/edit" %>
-  <%= button_to 'Delete Pet', "/pets/#{@pet.id}", method: :delete %>
-</div>
+
+      <p><%= @pet.approx_age %> year(s), <%= @pet.sex %><br>
+      <%= @pet.description %></p>
+
+      <div class='options'>
+        <%= link_to 'Update', "/pets/#{@pet.id}/edit" %>
+        <%= link_to 'Delete', "/pets/#{@pet.id}", method: :delete %>
+      </div>
+
+    </section>
+  </main>
+</body>

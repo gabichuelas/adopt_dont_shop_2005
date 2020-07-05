@@ -1,19 +1,28 @@
-<nav id="main-nav">
-  <%= link_to 'Shelters', "/shelters" %>
-  <%= link_to 'Pets', "/pets" %>
-</nav>
+<body>
+  <header>
+    <h4>Turing Mod 2: Adopt Don't Shop</h4>
+    <span id='main-nav'>
+      <%= link_to 'Shelters', "/shelters" %>
+      <%= link_to 'Pets', "/pets" %>
+    </span>
+  </header>
+  <main>
+    <section class='page-options'>
+      <h2 class='page-title'><%= @shelter.name %></h2>
+      <%= link_to 'See Pets', "/shelters/#{@shelter.id}/pets" %>
+    </section>
+    <section id='show-shelter'>
+      <div class="shelter-details">
+          <p><%= @shelter.address %><br>
+            <%= @shelter.city %>, <%= @shelter.state %><br>
+            <%= @shelter.zip %>
+          </p>
+      </div>
 
-<h1 class='page-title'><%= @shelter.name %></h1>
-<div id="shelter-details">
-    <p><%= @shelter.address %><br>
-      <%= @shelter.city %><br>
-      <%= @shelter.state %><br>
-      <%= @shelter.zip %>
-    </p>
-</div>
-
-<div class='options'>
-  <%= link_to 'See Pets', "/shelters/#{@shelter.id}/pets" %>
-  <%= link_to 'Update Shelter', "/shelters/#{@shelter.id}/edit" %>
-  <%= button_to 'Delete Shelter', "/shelters/#{@shelter.id}", method: :delete %>
-</div>
+      <div class='options'>
+        <%= link_to 'Update', "/shelters/#{@shelter.id}/edit" %>
+        <%= link_to 'Delete', "/shelters/#{@shelter.id}", method: :delete %>
+      </div>
+    </section>
+  </main>
+</body>

@@ -1,19 +1,34 @@
-<nav id="main-nav">
-  <%= link_to 'Shelters', "/shelters" %>
-  <%= link_to 'Pets', "/pets" %>
-</nav>
+<body>
+  <header>
+    <h4>Turing Mod 2: Adopt Don't Shop</h4>
+    <span id='main-nav'>
+      <%= link_to 'Shelters', "/shelters" %>
+      <%= link_to 'Pets', "/pets" %>
+    </span>
+  </header>
 
-<h1 class='page-title'>Pet List</h1>
-<ul id="pets-index">
-  <% @pets.each do |pet| %>
-    <%= image_tag(pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
-    <h3>Name: <%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h3>
-    <p>Approximate Age: <%= pet.approx_age %></p>
-    <p>Sex: <%= pet.sex %></p>
-    <p>Shelter: <%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %></p>
-    <div class='options'>
-      <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
-      <%= button_to 'Delete', "/pets/#{pet.id}", method: :delete %>
-    </div>
-  <% end %>
-</ul>
+  <main>
+    <section class='page-options'>
+      <h2 class='page-title'>Pet List</h2>
+    </section>
+
+    <section id='pets-index'>
+      <% @pets.each do |pet| %>
+        <div class='pet-card'>
+          <%= image_tag(pet.image, alt: "photo of pet", method: :get) %>
+
+          <div class='pet-details'
+            <a><%= link_to "#{pet.name}", "/pets/#{pet.id}", class: 'pet-name' %></a>
+            <p><%= pet.approx_age %> year(s), <%= pet.sex %></p>
+            <p><%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}", class: 'pet-shelter' %></p>
+          </div>
+
+          <div class='options'>
+            <%= link_to 'Update', "/pets/#{pet.id}/edit" %>
+            <%= link_to 'Delete', "/pets/#{pet.id}", method: :delete %>
+          </div>
+        </div>
+      <% end %>
+    </section>
+  </main>
+</body>
