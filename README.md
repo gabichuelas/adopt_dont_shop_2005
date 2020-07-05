@@ -469,7 +469,7 @@ and I am redirected to the Pet Show page where I see the pet's status has been c
 ```
 
 ```
-[X] done
+[/] done
 
 User Story 27, Sort Shelters by number of adoptable pets
 
@@ -478,10 +478,12 @@ When I visit the Shelter Index Page
 Then I see a link to sort shelters by the number of adoptable pets they have
 When I click on the link
 I'm taken back to the Shelters Index Page where I see all of the shelters in order of their count of adoptable pets (highest to lowest)
+
+>> I added logic to sort by pet count, but user has no sort option available to them, nor is it currently in use.
 ```
 
 ```
-[X] done
+[/] done
 
 User Story 28, Sort Shelters in Alphabetical Order
 
@@ -490,4 +492,6 @@ When I visit the Shelter Index Page
 Then I see a link to sort shelters in alphabetical order
 When I click on the link
 I'm taken back to the Shelters Index Page where I see all of the shelters in alphabetical order
+
+>> I added logic to sort alphabetically, and implemented in the view code, but user has no sort option available to them.
 ```
