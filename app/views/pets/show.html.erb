@@ -1,29 +1,21 @@
-<body>
-  <header>
-    <h4>Turing Mod 2: Adopt Don't Shop</h4>
-    <span id='main-nav'>
-      <%= link_to 'Shelters', "/shelters" %>
-      <%= link_to 'Pets', "/pets" %>
-    </span>
-  </header>
-  <main>
-    <section class='page-options'>
-      <h2 class='page-title'><%= @pet.name %></h2>
-      <span>status: <strong><%= @pet.status %></strong></span>
-    </section>
-    <section id='pet-detail'>
 
-      <%= image_tag(@pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
+<main>
+  <section class='page-options'>
+    <h2 class='page-title'><%= @pet.name %></h2>
+    <span>status: <strong><%= @pet.status %></strong></span>
+  </section>
+  <section id='pet-detail'>
+
+    <%= image_tag(@pet.image, alt: "photo of pet", method: :get, class: 'pet-image') %>
 
 
-      <p><%= @pet.approx_age %> year(s), <%= @pet.sex %><br>
-      <%= @pet.description %></p>
+    <p><%= @pet.approx_age %> year(s), <%= @pet.sex %><br>
+    <%= @pet.description %></p>
 
-      <div class='options'>
-        <%= link_to 'Update', "/pets/#{@pet.id}/edit" %>
-        <%= link_to 'Delete', "/pets/#{@pet.id}", method: :delete %>
-      </div>
+    <div class='options'>
+      <%= link_to 'Update', "/pets/#{@pet.id}/edit" %>
+      <%= link_to 'Delete', "/pets/#{@pet.id}", method: :delete %>
+    </div>
 
-    </section>
-  </main>
-</body>
+  </section>
+</main>
