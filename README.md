@@ -1,6 +1,8 @@
 # Adopt Don't Shop
 BE Mod 2 Week 1 Solo Project
 
+**Context:** This is the first app/project I've ever worked on in Rails.
+
 ### Project Retro
 
 **TLDR;** Didn't enjoy this as much as I wanted and expected to, BUT I do feel like I hit all the `learning goals` so that's a WIN.
